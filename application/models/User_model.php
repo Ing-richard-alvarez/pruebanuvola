@@ -2,6 +2,7 @@
 class User_model extends CI_Model {
 
     public function __construct(){
+        parent::__construct();
         $this->load->database();
     }
 
@@ -13,6 +14,10 @@ class User_model extends CI_Model {
 
         $query = $this->db->get_where('usuarios', array('id' => $cod));
         return $query->row_array();
+    }
+
+    public function getAllJson(){
+        return $this->db->get('usuarios')->result();
     }
 
     public function set_user(){

@@ -60,6 +60,21 @@ class Users extends CI_Controller {
         }
     }
 
+    public function graficas(){
+        
+
+        $this->load->view('templates/header');
+        $this->load->view('users/graficas');
+        $this->load->view('templates/footer');
+    }
+
+    public function dataGrafica(){
+        $this->load->view('templates/header');
+        $this->load->view('users/graficas');
+        $this->load->view('templates/footer');
+        return json_encode($this->user_model->getAllJson());
+    }
+
     public function update($id = NULL) {
         $this->load->helper('form');
         $this->load->library('form_validation');

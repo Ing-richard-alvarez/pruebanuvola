@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Prueba Nuvola</title>
 		<!-- Bootstrap CSS-->
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>Assets/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
     <nav aria-label="breadcrumb">

@@ -25,7 +25,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 col-sm-12">
-                  <h5 class="card-title">Nombres y apellidos</h5>
+                  <h5 class="card-title">Nombres y apellidos</h5>  
                   <p class="card-text"><?php echo $user_model['nombres'].' '.$user_model['apellidos']?>.</p>
                 </div>
               </div>
